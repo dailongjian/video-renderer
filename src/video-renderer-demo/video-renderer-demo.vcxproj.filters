@@ -182,6 +182,9 @@
     <ClCompile Include="libyuv\scale_uv.cc">
       <Filter>源文件\libyuv\source</Filter>
     </ClCompile>
+    <ClCompile Include="wddm_screen_capture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main_window.h">
@@ -261,6 +264,9 @@
     </ClInclude>
     <ClInclude Include="libyuv\libyuv.h">
       <Filter>源文件\libyuv</Filter>
+    </ClInclude>
+    <ClInclude Include="wddm_screen_capture.h">
+      <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

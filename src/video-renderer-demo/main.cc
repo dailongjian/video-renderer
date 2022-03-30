@@ -1,6 +1,7 @@
 #include "main_window.h"
 #include "d3d9_screen_capture.h"
 #include "d3d11_screen_capture.h"
+#include "wddm_screen_capture.h"
 #include "d3d9_renderer.h"
 #include "d3d11_renderer.h"
 
@@ -145,7 +146,7 @@ int main(int argc, char** argv)
 		return -1;
 	}
 
-	DX::D3D11ScreenCapture screen_capture;
+	DX::WddmScreenCapture screen_capture;
 	if (!screen_capture.Init()) {
 		return -2;
 	}
@@ -163,7 +164,7 @@ int main(int argc, char** argv)
 	MSG msg;
 	ZeroMemory(&msg, sizeof(msg));
 
-	DX::PixelFormat render_format = DX::PIXEL_FORMAT_I420;
+	DX::PixelFormat render_format = DX::PIXEL_FORMAT_ARGB;
 
 	while (msg.message != WM_QUIT) {
 		if (::PeekMessage(&msg, NULL, 0U, 0U, PM_REMOVE)) {

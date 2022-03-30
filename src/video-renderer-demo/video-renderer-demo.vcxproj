@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{5a63b056-cef9-413a-8a46-cdf51adb4820}</ProjectGuid>
     <RootNamespace>videorendererdemo</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -35,7 +35,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -204,6 +204,7 @@
     <ClCompile Include="main.cc" />
     <ClCompile Include="main_window.cc" />
     <ClCompile Include="d3d11_screen_capture.cc" />
+    <ClCompile Include="wddm_screen_capture.cpp" />
     <ClCompile Include="window_helper.cc" />
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +233,7 @@
     <ClInclude Include="main_window.h" />
     <ClInclude Include="d3d11_screen_capture.h" />
     <ClInclude Include="screen_capture.h" />
+    <ClInclude Include="wddm_screen_capture.h" />
     <ClInclude Include="window_helper.h" />
   </ItemGroup>
   <ItemGroup>

@@ -9,6 +9,7 @@ namespace DX {
 struct Image
 {
 	std::vector<uint8_t> bgra;
+
 	int width;
 	int height;
 
